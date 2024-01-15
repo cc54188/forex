@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "7bb61843-f77b-4446-842a-ecfbd81be149",
+		"name": "外匯查詢",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13281206"
+	},
+	"item": [
+		{
+			"name": "request的currency大小寫會有影響，目前先只能查到\"currency\"=\"usd\"的",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"startDate\": \"2024/01/01\",\r\n \"endDate\": \"2024/01/05\",\r\n \"currency\": \"usd\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/forex/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"forex",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

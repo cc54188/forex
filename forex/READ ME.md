@@ -9,7 +9,7 @@
 ## 3.批次的兩個單元測試
 
 1. 執行專案內的ForexApplicationTests.java檔(src/test/...內)，會直接打open api取得資料，並insert進table。
-2. 匯入Postman的[外匯openApi排程測試.json]這支檔案後，打API。兩者都會回傳open api取得的最新一筆資料。
+2. 匯入Postman的[外匯openApi排程測試.json]這支檔案後，打API。兩者都會回傳insert成功的資料。
 
 ## 4.查詢幣別
 

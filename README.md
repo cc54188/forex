@@ -8,12 +8,14 @@
 
 ## 3.批次的兩個單元測試
 
-1. 執行專案內的ForexApplicationTests.java檔(src/test/...內)，會直接打open api取得資料，並insert進table。
+1. 執行專案內的ForexApplicationTests.java檔(src/test/...內)，會直接打open api取得資料，insert進table，並印出。
 2. 匯入Postman的[外匯openApi排程測試.json]這支檔案後，打API。兩者都會回傳insert成功的資料。
 
 ## 4.查詢幣別
 
-可匯入Postman的[外匯查詢.json]打API看查詢結果，目前只能查"USD/NTD"，而參數是代入"usd"，才有辦法查到資料，若無符合幣別，會回傳錯誤代碼"E002"。
+1. 可匯入Postman的[外匯查詢.json]打API看查詢結果，目前只能查"USD/NTD"，而參數是代入"usd"，才有辦法查到資料，若無符合幣別，會回傳錯誤代碼"E002"。
+
+2. 若startDate > endDate，也會回傳E001(日期區間不符)。
 
 ## 5.查詢幣別的兩個單元測試
 
